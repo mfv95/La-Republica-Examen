@@ -1,0 +1,427 @@
+.home{
+	h1,h2,h3,h4,h5,h6{
+		font-family: 'PT Sans';
+		font-weight: 700;
+	}
+	h1{
+		font-size: 3.9em;	
+	}
+	h4{
+		font-size: 1.4em;
+	}
+	hr{
+		border-top: 5px solid #B20000;
+    	margin-top: 0;
+    	margin-bottom: 0;
+    	&.divider{
+    		border: 1px solid $color_border;
+    		margin: 9% 0;
+    	}
+	}
+	.fa.fa-facebook{
+		&.fa-stack{
+			@include media_social(1.5em,1.4em,$gris_light,$color_facebook);
+		}
+	}
+	.fa-twitter{
+		&.fa-stack{
+			@include media_social(1.5em,1.4em,$gris_light,$color_twitter);
+		}
+	}
+	.fa-google-plus{
+		&.fa-stack{
+			@include media_social(1.5em,1.4em,$gris_light,$color_googleplus);
+		}	
+	}
+	.bullet{
+		@include bollet_space(11px, 50deg);
+	}
+	.bullet+span,
+	.comment+span{
+		font-size: 0.7em;
+	}
+	.news-photo{
+		margin: 29px 0px;
+	}
+	.photoJNE{
+		@include bgimage('img_grid_principal',82%,21%,2%,5%);
+	}
+	.photoBelaunde{
+		@include bgimage('img_grid_secundario',33%,14%,1%,5%);
+		margin-bottom: 23px;	
+	}
+	.photojugadores{
+		@include bgimage('img_especiales',33%,14%,1%,5%);
+	}
+	.line-columnistas{
+		padding: 0 2%;
+		.columnistas{
+			background-color: $gris_lighter;
+			padding: 0;
+			position: relative;
+			hr{
+				border-top: 5px solid #B20000;
+			}
+			span{
+			position: absolute;
+    		top: -6px;
+    		right: 44%;
+			font-family: 'Oswald';
+			font-size: 1.2em;
+    		padding: 0.2% 0.8%;
+    		display: inline-block;
+    		color: white;
+    		background-color: #B20000;
+    		}
+    		.box-container{
+    			padding-top: 4%;
+    			padding-bottom: 4%;
+    			overflow: hidden;
+				.box-columnistas{
+    				width: 162px;
+					float: left;
+    				img{
+    					width: 90px;
+    				}
+    				&:nth-child(2),
+    				&:nth-child(4){
+    					padding: 0 9px;
+    				}
+    			}
+			}    	
+		}	
+	}
+	.line-columnistas+.row{
+		padding: 3% 0;
+	}
+	.news{
+	    margin-bottom: 25px;
+
+	}
+	.special-news{
+		p{
+			font-size: 0.8em;
+    		margin: 9px 0;
+			text-align: center;
+		}
+		@include special-news($color_border,1.08em,$title_special_news);
+		&.special-news1{
+			.photo-special-news{
+				@include photo-special('img_especiales',32%,7%,1%,4%,1.16em);
+			}		
+		}
+		&.special-news2{
+			.photo-special-news{
+				@include photo-special('img_especiales_aside',26%,7%,1%,4%,1.16em);
+			}		
+		}
+		&.special-news3{
+			.photo-special-news{
+				@include photo-special('img_especiales',38.5%,7%,1%,4%,1.16em);
+			}		
+		}
+		&.special-news4{
+			.photo-special-news{
+				@include photo-special('img_especiales_aside',26%,15%,1%,4%,1.16em);
+			}		
+		}
+	}
+	.media-news{
+		padding-top: 1.5%;
+    	padding-bottom: 3%;
+        border-bottom: 1px solid $color_border;
+		h4{
+			font-size: 1.3em;
+		}
+		.media{
+			overflow: hidden;
+			font-size: 0.9em;
+			letter-spacing: 0.3px;
+			.media-body{
+				padding-top: 2%;
+			}
+			.media-object{
+				margin-right: 23px;
+			}
+			.bullet{
+				@include bollet_space(19px, 50deg);
+			}
+			.comment{
+				margin-right: 7px;
+			}	
+			.media-left{
+				display: block;
+				float: left;
+			}
+			.fa.fa-youtube-play,
+			.fa.fa-camera{
+				color: $title_special_news;
+			}
+		}
+	}
+	.box-suscription{
+		background-image: url('../../assets/image/archive-sidebar-bg.jpg');
+		padding: 14% 5.5% 3.1%;
+		position: relative;
+		margin-top: 7%;
+		.email{
+			background-color: white;
+			padding-top: 17%;
+			padding-bottom: 10%;
+    		font-size: 1.1em;
+    		form{
+    			input{
+    				margin: 14px 0;
+    				border-width: 1px;
+    				border-style: inset;
+    				background-color: #EEEEEE;
+    				box-shadow: inset 0px 1px 6px 0px rgba(42,42,42,.23);
+    			}
+    			button{
+    				width: 86%;
+    				margin: auto;
+    				padding: 2px;
+    				color: white;
+    				background-color: $title_special_news;
+    			}
+    		}
+    		img{
+    			position: absolute;
+    			top: 6px;
+   				left: 37%;
+    		}
+		}
+	}
+	.box-aside{
+		border: 1px solid $color_border;
+		margin: 30px 0;
+		img{
+			padding: 10px 26% 0;
+		}
+    	.news-short{
+    		overflow: hidden;
+    		padding: 8% 4% 0 0;
+    		img{
+    		    display: block;
+    			float: left;
+    			padding: 0 4%;
+    		}
+    	}
+    	@include line_separador(0.8em,13px,#872F85,#872F85,44%);
+ 	}
+	.nazca{
+		font-size: 1.1em;
+	}
+	.box{
+		border: 1px solid transparent;
+		border-bottom: 1px solid $color_border;
+		padding-bottom: 9%;
+	}
+
+	@include hr_aside(#768696,36%);
+
+	.bground_news{
+		background-image: url('../../assets/image/img_especiales_aside.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 44% 0 3%;
+		margin-bottom: 17px;
+		&.laboral{
+			margin-top: 7%;
+		}
+		.img{
+			.img-responsive{
+    			float: left;
+			}
+		}
+	}
+	.bground_news>h4{
+		font-size: 1em;
+	    text-align: center;
+    	padding: 3%;
+    	margin: 0 3%;
+    	background-color: rgba(255,255,255,0.7);
+	}
+	.border1{
+		@include hr_aside($color_border,25%);
+	}
+	.border1+img{
+		margin-top: 7%;
+	}
+	.border2{
+		@include hr_aside($title_special_news,25%);
+	}
+	.carlincaturas{
+		color: $title_special_news;
+		border-bottom: 1px solid $color_border;
+		padding-bottom: 6%;
+    	margin-bottom: 9%;
+	}
+	.border3{
+		@include hr_aside(#768696,25%);	
+	}
+	.blog-short{
+		padding: 3% 0;
+		overflow: hidden;
+		img{
+			float: left;
+    		margin-right: 11px;
+		}
+		.text{
+			font-size: 0.7em;
+		}
+		.text+p{
+			font-size: 0.75em;
+    		font-weight: bold;
+    		margin: 0;
+		}
+	}
+	.box-blogueros{
+		margin-top: 5%;
+	}
+	.box-blogueros+p{
+		font-size: 0.9em;
+		font-weight: bold;
+    	border-bottom: 1px solid $color_border;
+    	padding: 4% 0;
+    	color: $title_special_news;
+    	margin-bottom: 8%;
+    }
+    .border4{
+    	@include hr_aside($title_special_news,30.5%);	
+    }
+    .newpaper{
+    	img{
+    		margin-bottom: 22px;
+    	}
+    }
+	.newpaper-short{
+		overflow: hidden;
+		padding-bottom: 19px;
+		img{
+			float: left;
+    		margin-right: 10px;
+		}
+		img+h5{
+			font-size: 1em;
+    		padding-top: 17%;
+		}
+		h5+a{
+			font-size: 0.84em;
+			text-decoration: underline;
+			color: $title_special_news;
+		}
+	}
+	.box-newpaper{
+		&.bordear{
+			border-bottom: 1px solid $color_border;
+		}
+	}
+	.border5{
+		margin-top: 11%;
+	}
+	.border5+.bground_news{
+		margin-top: 5%;
+	}
+	.formulario{
+		background-image: url('../../assets/image/archive-sidebar-bg.jpg');
+		padding: 37px 12px 16px;
+		h4{
+			font-size: 1.1em;
+		}
+		p{
+			font-size: 0.8em;
+		}
+		.cuestionario{
+			position: relative;
+			background-color: white;
+			padding: 14% 4% 4% 5%;
+			img{
+				position: absolute;
+				top: -27px;
+    			left: 39%;
+    		}
+			button{
+				width: 60%;
+    			margin: auto;
+    			padding: 0;
+    			margin-bottom: 4px;
+    			color: white;
+    			background-color: $title_special_news;
+			}
+			button+p{
+				color: $title_special_news;
+			}
+		}	
+		.barra_progreso{
+			background-color: white;
+    		margin-top: 13px;
+    		padding: 7px 20px 4px;
+    		.progress-bar{
+    			background-image: url('../../assets/image/barprogress_bg.jpg');
+    			margin-bottom: 12px;
+    			.bar1{
+    				@include bar(63%,26%,#CDF3A6);
+    			}
+    			.bar2{
+    				@include bar(45%,17%,#F0A3A3);
+    			}
+    		}
+    		.progress+p{
+    			color: $title_special_news;
+    		}
+		}
+	}
+	.libertador{
+		h5{
+			margin: 0;
+		}
+		@include line_separador(0.8em,13px,$title_special_news,$title_special_news,44%);
+	}
+	.elpopular{
+		@include line_separador(0.8em,13px,$title_special_news,#FFEA52,44%);
+	}
+	.wapa{
+		@include line_separador(0.8em,13px,#D12570,#D12570,44%);
+	}
+	.reportaje{
+		background-image: url('../../assets/image/archive-sidebar-bg.jpg');
+		padding: 10% 3.5% 1%;
+		button{
+    		padding: 4px 0;
+ 			width: 54%;
+    		margin: auto;
+    		margin-top: 10px;
+    		font-size: 0.7em;
+    		color: white;
+    		background-color: $title_special_news;
+    	}
+    	button+p{
+    		font-size: 0.8em;
+    		margin-top: 3%;
+    		color: $title_special_news;
+    	}
+		.reportaje_ciudadano{
+			position: relative;
+			.cameraphoto{
+				position: absolute;
+			    width: 20%;
+    			top: -22px;
+    			left: 42%;
+			}
+			h4{
+				font-size: 1.1em;
+				margin-bottom: 9%;
+			}
+			p{
+				font-size: 0.8em;
+				padding-right: 11%;
+			}
+			background-color: white;
+    		padding: 12% 4% 4%;
+    		img{
+    			width: 100%;
+    		}
+		}
+	}
+}

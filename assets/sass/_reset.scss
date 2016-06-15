@@ -1,0 +1,76 @@
+a:hover{
+	text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+	text-decoration: none;
+
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0 !important; 
+	margin-bottom: 0 !important;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-weight: normal;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.fix {
+  overflow: hidden;
+}
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  &[type=text], &[type=password] {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+}
+
+textarea {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.pagination{
+	padding: 0px;
+	margin: 0px;
+	li>a, li>span{
+		border: none;
+	}
+}

@@ -1,0 +1,87 @@
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title Home
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/columnista.css')
+    link(href='https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Condensed|Montserrat|Oswald', rel='stylesheet', type='text/css')
+  body
+    
+    
+    include helpers/mixins
+   
+    div.container-fluid
+        .col-md-2
+            img.img-responsive.publicidad.hidden-xs(src='assets/image/publicidad1.png')
+        .col-md-12
+            section.sub-header1
+                div.row
+                    .col-md-6.col-xs-12
+                        img(src='assets/image/logo-la-republica.jpg')
+                    .col-md-5.col-xs-8
+                        .nacionalismo
+                            p.lider HABLA LA LIDERESA DEL NACIONALISMO
+                            div.domingo
+                                p DOMINGO
+                    .col-md-5.col-xs-8
+                        .gustavo
+                            p.editorial editorial
+                            div.corrupcion
+                                h6 La corrupción, los orígenes
+                                p por:Gustavo Mohne Llona
+                            img.pull-right(src='assets/image/img_author.png')
+            
+            img.banner(src='assets/image/banner-header.jpg')
+            section.columnista
+                h1 Columnistas
+                p LO ÚLTIMO EN COLUMNISTAS 
+                 img(src='assets/image/double-arrow-bottom.png')
+                .row.columnas
+                    +columna("blog1", "subtitulop") 
+                    +columna("blog2", "subtitulo1")
+                    +columna("blog3", "subtitulo2")
+                .row.columnas
+                    +columna("blog4", "subtitulop")
+                    +columna("blog5", "subtitulo1")
+                    +columna("blog6", "subtitulo2")
+                .row.columnas
+                    +columna("blog1", "subtitulop") 
+                    +columna("blog2", "subtitulo1")
+                    +columna("blog3", "subtitulo2")
+                .row.columnas
+                    +columna("blog4", "subtitulop")
+                    +columna("blog5", "subtitulo1")
+                    +columna("blog6", "subtitulo2")
+                div.col-md-16
+                    p.todas TODAS LAS COLUMNAS
+                p TODOS LOS COLUMNISTAS
+                 img(src='assets/image/double-arrow-bottom.png')
+                +submenu
+                +columnistas
+                +columnistas
+                +columnistas
+                +columnistas
+                +columnistas
+                +columnistas
+                +columnistas
+        .col-md-2
+            img.img-responsive.publicidad.hidden-xs(src='assets/image/publicidad2.png')
+
+    
+    include views/footer
+
+
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')

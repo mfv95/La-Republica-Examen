@@ -1,0 +1,88 @@
+@mixin media_social($width,$height,$color_bg,$color){
+	width: $width;
+	height: $height;
+	line-height: $width; 
+	border-radius: 17%;
+    box-shadow: 0px 3px 0px $color;
+    background-color: $color_bg;
+    color: $color;
+    margin: 0 4px;
+}
+
+@mixin bgimage($url1,$top,$right,$bottom,$left){
+	// background-image: url('../../assets/image/'+ $url1 +'.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6)),url('../../assets/image/'+ $url1 +'.jpg');
+	color:#FFFFFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	padding: $top $right $bottom $left;
+	color: white;
+}
+
+@mixin special-news($color-border,$font-size,$color-title){
+	border: 1px solid $color-border;
+	h5{
+		font-size: $font-size;
+		color: $color-title;
+		text-align: center;
+	}
+}
+
+@mixin photo-special($url1,$top,$right,$bottom,$left,$font-size){
+	background: linear-gradient(transparent,rgba(0, 0, 0, 1)),url('../../assets/image/'+ $url1 +'.jpg');
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: $top $right $bottom $left;
+	color: white;
+	h4{
+		font-size: $font-size;	
+	}
+}
+
+@mixin bollet_space($margin,$rotate){
+	transform: rotate(50deg);
+	margin: 0 $margin;
+}
+
+@mixin line_separador($font-size,$padding-top,$color1,$color2,$width){
+	p{
+		font-size: $font-size;
+		padding-top: $padding-top;
+		span{
+			color: $color1;
+		}
+	}
+	.line-separador{
+		border: 2px solid $color2;
+		width: $width;
+		margin: auto;
+	}
+}
+
+@mixin hr_aside($color,$left){
+	hr{
+		border-top: 5px solid $color;
+	}
+	hr+span{
+		font-size: 0.7em;
+		padding: 2.5% 2.8%;
+		background-color: $color;
+		color: white;
+		position: relative;
+		left: $left;
+    	top: -8px;
+	}
+}
+
+@mixin bar($width,$var1,$color){
+	width: $width;
+    padding: 2% $var1;
+    background-color: $color;
+}
+
+@mixin social ($back, $fsize){
+ 	color: $back;
+    font-size: $fsize;
+}

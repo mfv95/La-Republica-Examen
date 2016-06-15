@@ -1,0 +1,77 @@
+.contact{
+	background-color: white;
+	overflow: hidden;
+	margin-bottom: 5%;
+	h1{
+		font-family: 'PT Sans';
+		font-weight: 700;
+		font-size: 3.9em;
+		// margin-bottom: 5px;
+		padding-top: 3%;
+    	padding-bottom: 2%;
+	}
+	p{
+		font-family: 'PT Sans', sans-serif;
+		font-size: 16px;
+		margin-bottom: 50px;
+		&.text-justify{
+			padding-left: 4%;
+    		padding-right: 2%;
+    		padding-bottom: 7%;
+    	}
+	}
+	input{
+		border-width: 1px;
+    	border-style: inset;
+    	background-color: #EEEEEE;
+    	box-shadow: inset 0px 1px 6px 0px rgba(42,42,42,.23);
+    	padding: 8px;
+    }
+    label{
+    	font-family: 'PT Sans', sans-serif;
+    	font-weight: 400;
+    	font-size: 18px;
+    	padding-bottom: 3%;
+    }
+    .opcional{
+    		margin-top: -13px;
+    }
+    h3{
+		font-family: 'PT Sans';
+		font-weight: 700;
+		padding-top: 8%;
+    	padding-bottom: 3%;
+	}
+	.little{
+		margin-bottom: 7px;
+    	font-size: 14px;
+    	padding-bottom: 6%;
+	}
+	textarea{
+		border-width: 1px;
+    	border-style: inset;
+    	background-color: #EEEEEE;
+    	box-shadow: inset 0px 1px 6px 0px rgba(42,42,42,.23);
+    	padding: 8px;
+    	height: 150px;
+    	margin-top: 50px;
+	}
+	.cuadro-btn{
+		button{
+			background: $color_chicago_approx;
+			background-image: linear-gradient(to bottom, $color_chicago_approx, $black);
+			border-radius: 5px;
+			font-family: 'PT Sans';
+			font-weight: 700;
+			color: $white;
+			font-size: 20px;
+			padding: 10px 100px;
+			text-decoration: none;
+			&:hover {
+				background: $color_gray_approx;
+				background-image: linear-gradient(to bottom, $color_gray_approx, $color_mirage_approx);
+				text-decoration: none;
+			}
+		}
+	}
+}

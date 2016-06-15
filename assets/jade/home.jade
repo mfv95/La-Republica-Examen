@@ -1,0 +1,350 @@
+include helpers/variables
+include helpers/mixin
+
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title Home
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')
+  body
+    include views/header
+    section.home
+        .container-fluid
+            .row
+                .col-md-2
+                
+                .col-md-12
+                    .row
+                        .col-md-16.text-center
+                            h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+                    .row
+                        .col-md-16
+                            .row.text-center
+                                    +iconsocial('facebook')
+                                    +iconsocial('twitter')
+                                    +iconsocial('google_plus')
+                                    img.bullet(src="assets/image/bullet.gif", alt="imagen pto")
+                                    span Hace 12 minutos
+                                    img.bullet(src="assets/image/bullet.gif", alt="imagen pto")                 
+                                    span POLÍTICA
+                            .row.news-photo
+                                .col-md-8
+                                    .photoJNE
+                                        h2 JNE impulsará campaña en favor de la aprobación de la Reforma Electoral 
+                                .col-md-8
+                                    .row
+                                        .col-md-16
+                                            .photoBelaunde
+                                                h4 Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/.3 000 millones | FOTOS
+                                    .row
+                                        .col-md-16
+                                            .photojugadores
+                                                h4 Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO
+                    .row.line-columnistas
+                        .col-md-16.text-center.columnistas
+                            hr
+                            span COLUMNISTAS
+                            .box-container
+                                .box-columnistas
+                                    +box_columnistas('img-columnistas','Mario Vargas Llosa','Megarrenuncia apulpinante')
+                                .box-columnistas    
+                                    +box_columnistas('img_blogueros','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
+                                .box-columnistas    
+                                    +box_columnistas('img-columnistas','Mario Vargas Llosa','Megarrenuncia apulpinante')
+                                .box-columnistas    
+                                    +box_columnistas('img_blogueros','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
+                                .box-columnistas    
+                                    +box_columnistas('img-columnistas','Mario Vargas Llosa','Megarrenuncia apulpinante')
+                                .box-columnistas    
+                                    +box_columnistas('img_blogueros','Mario Vargas Llosa','Megarrenuncia apulpinante')
+                    .row
+                        .col-md-16
+                            .col-md-11
+                                .row.news
+                                    .col-md-8
+                                        .special-news.special-news1
+                                            +specialnew('Mercado de Pases 2015','Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos','Todo sobre')
+                                    .col-md-8
+                                        .special-news.special-news2
+                                            +specialnew('Régimen laboral juvenil','Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes | VIDEO','Todo sobre')
+                                .row
+                                    .col-md-8
+                                        .special-news.special-news3
+                                            +specialnew('Champions League','¿Podrá el Real Madrid conseguir la "Undécima"?','Todo sobre')
+                                    .col-md-8
+                                        .special-news.special-news4
+                                            +specialnew('Super Bowl','Super Bowl XLIX: New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks | VIDEO','Todo sobre')
+                                .row
+                                    .col-md-16
+                                        h5 ÚLTIMAS NOTICIAS
+                                            img(src="assets/image/double-arrow-bottom.png", alt="imagen arrow bottom")
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t1,'img_news',p1,'10','ESPECTÁCULOS','youtube')
+                                        .media-news
+                                            +media1(t2,'img_news',p2,'0','AREQUIPA')
+                                        .media-news
+                                            +media(t3,'img_news',p1,'10','ESPECTÁCULOS','camera')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+                                        .media-news
+                                            +media1(t4,'img_news',p3,'0','AREQUIPA')
+
+                            .col-md-5
+                                img.img-responsive(src="assets/image/banner-aside-home.jpg", alt="banner")
+                                .box-suscription
+                                    .email.text-center
+                                        strong Suscríbete
+                                        | &nbsp;a nuestro boletín
+
+                                        form(action='', method='post')
+                                            input(type='text',name='suscripstion',value='')
+                                            button(type='button', class='btn btn-block')
+                                                |SUSCRIBIRSE
+                                        img(src="assets/image/img_sucribe.png", alt="foto email")
+                                .box-aside
+                                    img(src="assets/image/logo_aweita.jpg")
+                                    .news-short
+                                        +news_short('img_aweita',news)
+                                    .news-short
+                                        +news_short('img_aweita',news1)
+                                    .news-short
+                                        +news_short('img_aweita',news)
+                                    .news-short
+                                        +news_short('img_aweita',news2)
+                                    p.text-center Más en
+                                        span  Aweita.pe
+                                    .line-separador   
+
+                                .border1
+                                    hr.aside
+                                    span FOTOS DESTACADAS
+
+                                img.img-responsive(src="assets/image/img_fotodes_prominent.jpg")
+                                h4.nazca Líneas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace | FOTOS
+                                .box-aside.box
+                                    .news-short
+                                        +news_short('img_fotodes',news)
+                                    .news-short
+                                        +news_short('img_aweita',news1)
+                                    .news-short
+                                        +news_short('img_aweita',news)
+                                hr.aside
+                                span ESPECIALES
+                                .bground_news.laboral
+                                    h4 Régimen laboral juvenil
+                                .bground_news
+                                    h4 COP 20
+                                .bground_news
+                                    h4 Concentración de Medios
+                                .bground_news.border
+                                    h4 Especies peruanas en peligro de extinción
+                                hr.divider
+                                .border2
+                                    hr.aside
+                                    span CARLINCATURA DEL DÍA
+                                
+                                h4.text-center Carlincaturas 30-01-2015
+                                img.img-responsive(src="assets/image/img_carlincatura_sd.jpg")
+                                h5.text-center.carlincaturas Todas las Carlincaturas
+                                .border3
+                                    hr.aside
+                                    span NUESTROS BLOGUEROS
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','El único pulpín es Humala')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','Dios ha muerto...tengo las manos')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','El único pulpín es Humala')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','Dios ha muerto...tengo las manos')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','Dios ha muerto...tengo las manos')
+                                .box-blogueros
+                                    .blog-short
+                                        +blog_short('img_blogueros','Augusto Álvarez Rodrich','El único pulpín es Humala')
+                                p.text-center Todos los blogs
+                                .border4
+                                    hr.aside
+                                    span EDICIÓN IMPRESA
+                                h4.text-center La República Lima
+                                .newpaper
+                                    img.img-responsive(src="assets/image/img_impreso_sd_prominent.jpg")
+
+                                .box-newpaper
+                                    +newpaper_short('img_impreso_sd','Extorsionan a menores en colegio','La República - Norte')
+                                .box-newpaper
+                                    +newpaper_short('img_impreso_sd','Lluvias en Arequipa inundan casas y causan caos en calles','La República - Sur')
+                                .box-newpaper.bordear
+                                    +newpaper_short('img_impreso_sd','El Ojo de Oblitas','Domingo')
+                                .border5
+                                    hr.aside
+                                    span INFOGRAFÍAS
+                                .bground_news
+                                    h4 Histórico cierre de frontera
+                                .bground_news
+                                    h4 Evolución de la pobreza e indigencia en América Latina.divider
+                                hr.divider
+                                .formulario
+                                    .cuestionario
+                                        img(src="assets/image/img_pregunta.png")
+                                        h4.text-center La pregunta de hoy
+                                        p ¿Creee usted que la premier Ana Jara debe renunciar?
+                                        p.text-center
+                                            input.destinity(type='radio', name='destinatario', value='destino')
+                                            label Sí
+                                        p.text-center
+                                            input.destinity(type='radio', name='destinatario', value='destino')
+                                            label No
+                                        button(type='button', class='btn btn-block')
+                                                |Votar
+                                        p.text-center Ver resultados
+                                    .barra_progreso
+                                        h4.text-center La pregunta de ayer
+                                        p ¿Cree usted que se militarizó la conmemoración del fallo de La Haya en Lima?
+                                        .progress
+                                            .progress-bar
+                                                .bar1
+                                                    |55%
+                                            .progress-bar        
+                                                .bar2
+                                                    |25%
+                                        p.text-center Ver preguntas pasadas
+                                .libertador
+                                    .box-aside
+                                        img(src="assets/image/logo_libero.jpg")
+                                        .news-short
+                                            +news_short('img_aweita',news3)
+                                        .news-short
+                                            +news_short('img_aweita',news4)
+                                        .news-short
+                                            +news_short('img_aweita',news5)
+                                        .news-short
+                                            +news_short('img_aweita',news6)
+                                        p.text-center Más en
+                                            span  Libero.pe
+                                        .line-separador
+                                .elpopular
+                                    .box-aside
+                                        img(src="assets/image/logo_popular.jpg")
+                                        .news-short
+                                            +news_short('img_aweita',news7)
+                                        .news-short
+                                            +news_short('img_aweita',news8)
+                                        .news-short
+                                            +news_short('img_aweita',news9)
+                                        .news-short
+                                            +news_short('img_aweita',news10)
+                                        p.text-center Más en
+                                            span  elPopular.pe
+                                        .line-separador
+                                .wapa
+                                    .box-aside
+                                        img(src="assets/image/logo_wapa.jpg")
+                                        .news-short
+                                            +news_short('img_aweita',news11)
+                                        .news-short
+                                            +news_short('img_aweita',news12)
+                                        .news-short
+                                            +news_short('img_aweita',news13)
+                                        .news-short
+                                            +news_short('img_aweita',news14)
+                                        p.text-center Más en
+                                            span  elPopular.pe
+                                        .line-separador
+                                .reportaje
+                                    .reportaje_ciudadano
+                                        img.cameraphoto(src="assets/image/img_reporteroc.png")
+                                        h4.text-center Reportero ciudadano
+                                        img(src="assets/image/img_sd_reporteroc.jpg")
+                                        h5 Estacionamiento indebido
+                                        p ¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+                                    button(type='button', class='btn btn-block')
+                                                |ENVIAR FOTOS
+                                        p.text-center Más fotos
+                .col-md-2
+    include views/footer

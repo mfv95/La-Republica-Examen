@@ -1,0 +1,203 @@
+mixin link(call)
+    case call
+        when 'first'
+            a.libero(href='http://www.libero.pe/')
+             p LIBERO.PE
+        when 'second'
+            a.libero(href='http://www.elpopular.pe/')
+             p ELPOPULAR.PE
+        when 'third'
+            a.libero(href='http://fundacionmohme.org/')
+             p FUNDACIÓN GUSTAVO MOHME LLONA
+
+mixin social
+  .social
+            a
+                i.fa.fa-facebook
+            a
+                i.fa.fa-twitter
+            a
+                i.fa.fa-google-plus
+            a
+                i.fa.fa-envelope
+            a
+                i.fa.fa-rss
+
+mixin nav1(href,name)
+    li: a(href='#')=name
+mixin nav2(href,name)
+    li: a.todos(href='#')=name
+mixin nav3(href,name)
+    li: a.abc(href='#')=name
+
+mixin menu
+  .menu
+     ul   
+        +nav1("#","POLÍTICA")
+        +nav1("#","ECONOMÍA")
+        +nav1("#","SOCIEDAD")
+        +nav1("#","ELECC.REGIONALES")
+        +nav1("#","DEPORTES")
+        +nav1("#","CHAMPIONS L.")
+        +nav1("#","ESPECTÁCULOS")
+        +nav1("#","ED.IMPRESA")
+        +nav1("#","REGIONALES")
+        a.mas(href='#')
+         p MÁS SECCIONES&nbsp;&nbsp;
+          i.fa.fa-angle-down
+
+mixin pagina
+  .pagina
+     ul.pagination
+      li
+       a.previous(href='#', aria-label='Previous')
+        span(aria-hidden='true') ‹
+      li
+       a(href='#') Globos de oro
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;Youtube
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;PNP
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;Charlie Hebdo
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;FC Barcelona
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;Alianza Lima
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;Balón de Oro
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;Alianza Lima
+      li
+       a(href='#') •&nbsp;&nbsp;&nbsp;Balón
+      li
+       a.next(href='#', aria-label='Next')
+        span(aria-hidden='true') ›
+
+mixin blog(blogimg)
+  case blogimg
+      when 'blog1'
+        div.blog-img
+          img.pull-left.img1(src="assets/image/img_author_columnista.jpg")
+          p.name-autor1 Augusto Álvarez Rodrich
+          p.date-p1 Claro y directo
+      when 'blog2'
+          div.blog-img
+            img.pull-left.img2(src="assets/image/img_author_columnista1.jpg")
+            p.name-autor2 Mirko Lauer
+            p.date-p2 Observador
+      when 'blog3'
+          div.blog-img
+            img.pull-left.img3(src="assets/image/img_author_columnista2.jpg")
+            p.name-autor3 Aldo Miyashiro
+            p.date-p3 Chino de mi barrio
+      when 'blog4'
+          div.blog-img
+            img.pull-left.img4(src="assets/image/img_author_columnista3.jpg")
+            p.name-autor4 Francisco Durand
+            p.date-p4 Tiro al blanco
+      when 'blog5'
+          div.blog-img
+            img.pull-left.img5(src="assets/image/img_author_columnista4.jpg")
+            p.name-autor5 Humberto Campoclónico
+            p.date-p5 Cristal de Mira
+      when 'blog6'
+          div.blog-img
+            img.pull-left.img6(src="assets/image/img_author_columnista5.jpg")
+            p.name-autor6 Javier Ágreda
+            p.date-p6 Jaque Perpetuo
+
+mixin columnap(subtitulo)
+  case subtitulo
+      when 'subtitulop'
+        p.lunes Lunes, 14 de julio de 2015
+        h3.gol El gol de la muerte
+      when 'subtitulo1'
+        p.lunes Lunes, 14 de julio de 2015
+        h3.dios Dios ha muerto... tengo las manos cubiertas de sangre
+      when 'subtitulo2'
+        p.lunes Lunes, 14 de julio de 2015
+        h3.gol ¿Cuál es tu queso favorito?
+        
+mixin columna(blogimg,subtitulo) 
+        .col-md-5.fecha
+            +columnap(subtitulo)
+            +blog(blogimg)
+
+mixin submenu
+  .submenu
+     ul   
+        +nav2("#","TODOS")
+        +nav3("#","ABC")
+        +nav1("#","DEF")
+        +nav1("#","GHI")
+        +nav1("#","JKL")
+        +nav1("#","MNO")
+        +nav1("#","PQRS")
+        +nav1("#","TUV")
+        +nav1("#","WXYZ")
+
+mixin columnista-img(columnimg)
+  case columnimg
+      when 'column1'
+          .column-img
+            img.pull-left(src="assets/image/img_author_columnista4.jpg")
+            h4.column-img1 Francisco Durand
+            p.column-p Tiro al blanco
+      when 'column2'
+          .column-imgb
+            img.pull-left(src="assets/image/img_author_columnista5.jpg")
+            h4.column-img2 Humberto Campodónico
+            p.column-p  Cristal de Mira
+      when 'column3'
+          .column-img
+            img.pull-left(src="assets/image/img_author_columnista2.jpg")
+            h4 Javier Ágreda
+            p.column-p Jaque Perpetuo
+      when 'column4'
+          .column-img
+            img.pull-left(src="assets/image/img_author_columnista6.jpg")
+            h4 Javier Ágreda
+            p.column-p Jaque Perpetuo
+      when 'column5'
+          .column-img
+            img.pull-left(src="assets/image/img_author_columnista8.jpg")
+            h4 Francisco Durand
+            p.column-p Tiro al blanco
+      when 'column6'
+          .column-imga
+            img.pull-left(src="assets/image/img_author_columnista9.png")
+            h4 Humberto Campodónico
+            p.column-p.actualidad Actualidad Economica - Oscar Dancourt
+      when 'column7'
+          .column-img
+            img.pull-left(src="assets/image/img_author_columnista10.png")
+            h4 Javier Ágreda
+            p.column-p Mirada externa
+      when 'column8'
+          .column-img
+            img.pull-left(src="assets/image/img_author_columnista11.png")
+            h4 Javier Ágreda
+            p.column-p Defensa
+
+mixin columnistas
+      .row    
+        .col-md-4
+            +columnista-img('column1')
+        .col-md-4
+            +columnista-img('column2')
+        .col-md-4
+            +columnista-img('column3')
+        .col-md-4
+            +columnista-img('column4')
+      .row
+        .col-md-4
+            +columnista-img('column5')
+        .col-md-4
+            +columnista-img('column6')
+        .col-md-4
+            +columnista-img('column7')
+        .col-md-4
+            +columnista-img('column8')
+
+    

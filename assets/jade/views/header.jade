@@ -1,0 +1,49 @@
+include mixinheader
+header
+    div.container-fluid.fluid1
+        div.col-md-2
+        div.col-md-12
+            img.img-responsive(src='assets/image/banner_top.jpg')
+            div.news-paper.col-md-8
+                +link('first')
+                +link('second')
+                +link('third')
+            div.news-paper1.col-md-8
+             .suscribete
+               p suscríbete al boletín
+             +social
+             .buscar
+              p buscar
+               i.fa.fa-search
+        div.col-md-2
+
+    .container-fluid
+        .col-md-2
+            img.img-responsive.publicidad.hidden-xs(src='assets/image/publicidad1.png')
+        .col-md-12
+            section.sub-header1
+                div.row
+                    .col-md-6.col-xs-12
+                        img(src='assets/image/logo-la-republica.jpg')
+                    .col-md-5.col-xs-8
+                        .nacionalismo
+                            p.lider HABLA LA LIDERESA DEL NACIONALISMO
+                            div.domingo
+                                p DOMINGO
+                    .col-md-5.col-xs-8
+                        .gustavo
+                            p.editorial editorial
+                            div.corrupcion
+                                h6 La corrupción, los orígenes
+                                p por:Gustavo Mohne Llona
+                            img.pull-right(src='assets/image/img_author.png')
+            section.hidden-xs
+                +menu
+                div.row
+                    .col-md-2.tema
+                        p TEMAS DEL DÍA
+                    .col-md-14.nav
+                        +pagina
+            img.banner(src='assets/image/banner-header.jpg')
+        .col-md-2
+            img.img-responsive.publicidad.hidden-xs(src='assets/image/publicidad2.png')

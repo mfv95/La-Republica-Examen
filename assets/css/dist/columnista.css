@@ -1,0 +1,102 @@
+a:hover { text-decoration: none; }
+
+* { margin: 0; padding: 0; }
+
+a { text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0 !important; margin-bottom: 0 !important; margin: 0; padding: 0; border: 0; vertical-align: baseline; font-weight: normal; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+.fix { overflow: hidden; }
+
+.floatleft { float: left; }
+
+.floatright { float: right; }
+
+img { max-width: 100%; height: auto; }
+
+input[type=text], input[type=password] { border: 1px solid #ddd; padding: 5px; }
+
+textarea { border: 1px solid #ddd; padding: 5px; }
+
+.pagination { padding: 0px; margin: 0px; }
+.pagination li > a, .pagination li > span { border: none; }
+
+body header { background-color: #F4F5F7; border-bottom: 2px solid #E8EAEE; }
+body header .news-paper { display: inline-flex; padding-top: 2.5%; padding-bottom: 1%; }
+body header .news-paper a { padding-left: 1%; padding-right: 2%; font-size: 10px; color: #7D7D7D; font-family: "PT Sans", sans-serif; }
+body header .news-paper1 { display: inline-flex; padding-left: 78px; padding-top: 1%; padding-bottom: 0.5%; }
+body header .news-paper1 .suscribete { padding: 1%; background-color: #DD4A4A; border-radius: 4px; margin-top: 2%; font-size: 10px; color: white; text-transform: uppercase; font-weight: bold; font-family: "PT Sans", sans-serif; margin-bottom: 1%; }
+body header .news-paper1 .social { display: flex; margin-top: 2.2%; }
+body header .news-paper1 .social a { padding-right: 3%; padding-left: 7%; }
+body header .news-paper1 .social a .fa-facebook { color: #2A65A1; font-size: 1em; }
+body header .news-paper1 .social a .fa-twitter { color: #4BB7D9; font-size: 1em; }
+body header .news-paper1 .social a .fa-google-plus { color: #CF5B4F; font-size: 1em; font-weight: bold; }
+body header .news-paper1 .social a .fa-envelope { color: #FFBF00; font-size: 1em; }
+body header .news-paper1 .social a .fa-rss { color: #FE8D1C; font-size: 1em; }
+body header .news-paper1 .buscar { margin-left: 6%; margin-top: 2%; border-right: 2px solid #E8EAEE; border-left: 2px solid #E8EAEE; padding-right: 3%; padding-left: 2%; }
+body header .news-paper1 .buscar p { color: #6C7B8B; text-transform: uppercase; font-size: 12px; font-weight: bold; padding-top: 7%; }
+body header .news-paper1 .buscar p i { position: relative; left: 5%; transform: rotate(80deg); }
+body .container-fluid .publicidad { position: absolute; margin-top: 88%; }
+body .container-fluid .sub-header1 { overflow: hidden; padding: 1%; padding-top: 3%; }
+body .container-fluid .sub-header1 img { margin-top: 2%; }
+body .container-fluid .sub-header1 .nacionalismo .lider { font-size: 10px; font-weight: bold; border: 1px solid #E8E8E8; padding: 2em 0px 1.5em 3.5%; border-bottom: 2px solid #941010; color: #3C3C3C; width: 89%; }
+body .container-fluid .sub-header1 .nacionalismo .domingo p { font-family: "Montserrat"; font-weight: bold; position: absolute; top: -8px; background: #941010; padding: 1%; padding-left: 4%; font-size: 13px; color: white; left: 35%; padding-right: 4%; }
+body .container-fluid .sub-header1 .gustavo .editorial { transform: rotate(270deg); position: absolute; left: -6px; top: 21%; font-size: 11px; background: #2C3238; color: white; font-family: "Roboto Condensed", sans-serif; border-radius: 3px; padding: 2%; padding-bottom: 5%; padding-top: 3%; text-transform: uppercase; }
+body .container-fluid .sub-header1 .gustavo .corrupcion { border: 1px solid black; border-radius: 11px; padding: 5%; position: absolute; background: white; left: 10.4%; top: -1%; padding-right: 8%; }
+body .container-fluid .sub-header1 .gustavo img { position: relative; left: 4%; margin-top: -4%; background: white; }
+body .container-fluid section .menu ul { display: flex; background: #BA1414; border-radius: 5px; margin: 1%; margin-left: 1.5%; }
+body .container-fluid section .menu ul li { border-right: 1px solid #7F0808; padding-top: 0.4%; padding-left: 16px; padding-bottom: 6px; padding-right: 9px; }
+body .container-fluid section .menu ul li a { font-size: 9px; color: white; font-family: "PT Sans", sans-serif; }
+body .container-fluid section .menu ul .mas { font-size: 10px; padding-top: 7px !important; padding: 0.5%; color: white; padding-left: 2%; font-family: "PT Sans", sans-serif; }
+body .container-fluid section .tema { margin-left: 13px; padding-bottom: 1%; }
+body .container-fluid section .tema p { font-size: 12.5px; background: #111417; padding: 8%; font-family: "Roboto Condensed", sans-serif; padding-right: 4%; padding-left: 8px; border-radius: 5px; color: white; }
+body .container-fluid section .nav { position: absolute; left: 12.3%; width: 85.7%; background: #E4E7EA; border-radius: 5px; }
+body .container-fluid section .nav .pagination li a { font-size: 12.5px; background: #E4E7EA; color: #768696; padding: 4px; font-family: "PT Sans", sans-serif; padding-left: 6px; padding-right: 6px; }
+body .container-fluid .banner { width: 99%; margin: auto; margin-left: 1.2%; }
+body .container-fluid .columnista h1 { font-weight: bold; padding: 2%; }
+body .container-fluid .columnista .columnas { padding-left: 5%; text-align: center; }
+body .container-fluid .columnista .columnas .fecha { border: 2px solid #E2E6E9; margin-bottom: 12px; padding: 10px; margin-right: 2%; }
+body .container-fluid .columnista .columnas .fecha .lunes { font-family: "PT Sans", sans-serif; font-size: 14px; margin-top: 15px; padding-top: 25px; padding-bottom: 7px; }
+body .container-fluid .columnista .columnas .fecha .gol { padding-bottom: 55px; font-weight: bold; font-size: 19px; }
+body .container-fluid .columnista .columnas .fecha .dios { font-size: 19px; padding-bottom: 35px; font-weight: bold; }
+body .container-fluid .columnista .columnas .fecha .blog-img { background-color: #E2E6E9; padding: 12px; padding-bottom: 19px; }
+body .container-fluid .columnista .columnas .fecha .blog-img img { padding: 3px; background: white; margin-right: 10px; font-weight: bold; }
+body .container-fluid .columnista .columnas .fecha .blog-img .name-autor1, body .container-fluid .columnista .columnas .fecha .blog-img .name-autor2, body .container-fluid .columnista .columnas .fecha .blog-img .name-autor3, body .container-fluid .columnista .columnas .fecha .blog-img .name-autor4, body .container-fluid .columnista .columnas .fecha .blog-img .name-autor5, body .container-fluid .columnista .columnas .fecha .blog-img .name-autor6 { font-family: "Oswald" !important; font-weight: bold; text-align: left; font-size: 12px; padding-left: 1%; padding-bottom: 2%; }
+body .container-fluid .columnista .columnas .fecha .blog-img .date-p1, body .container-fluid .columnista .columnas .fecha .blog-img .date-p2, body .container-fluid .columnista .columnas .fecha .blog-img .date-p3, body .container-fluid .columnista .columnas .fecha .blog-img .date-p4, body .container-fluid .columnista .columnas .fecha .blog-img .date-p5, body .container-fluid .columnista .columnas .fecha .blog-img .date-p6 { font-family: "PT Sans", sans-serif; font-weight: bold; color: #6B7C89; padding-bottom: 8%; text-align: left; padding-left: 1%; }
+body .container-fluid .columnista p { font-family: "Oswald"; padding-left: 2%; padding-bottom: 2%; color: #768596; }
+body .container-fluid .columnista .todas { text-align: center; font-family: "PT Sans", sans-serif; color: white; background: #BA1414; padding: 1% 3%; width: 22%; margin: auto; font-size: 13px; font-weight: bold; border-radius: 5px; }
+body .container-fluid .columnista .submenu { background: #C21A01; border-radius: 12px; padding: 0.5%; margin-bottom: 2%; margin-top: 2%; }
+body .container-fluid .columnista .submenu ul { display: flex; padding-left: 5%; }
+body .container-fluid .columnista .submenu ul li { padding-left: 3%; padding-right: 3%; margin-top: 1%; }
+body .container-fluid .columnista .submenu ul li a { color: white; font-size: 13px; font-weight: bold; }
+body .container-fluid .columnista .submenu ul li .todos { background: #811101; padding: 6%; border-radius: 16px; padding-left: 19%; padding-right: 19%; font-family: "PT Sans", sans-serif; }
+body .container-fluid .columnista .submenu ul li .abc { background: #D90000; padding: 6%; border-radius: 11px; padding-left: 30%; font-weight: bold; padding-right: 19%; font-family: "PT Sans", sans-serif; }
+body .container-fluid .columnista .column-img { background-color: #E2E6E9; padding: 12px; padding-bottom: 9px; margin-bottom: 14px; }
+body .container-fluid .columnista .column-img .column-img1 { font-size: 14px; font-weight: 700; font-family: "Oswald"; }
+body .container-fluid .columnista .column-img .column-img2 { font-size: 14px; font-weight: 700; font-family: "Oswald"; }
+body .container-fluid .columnista .column-img h4 { font-family: "Oswald"; font-size: 14px; font-weight: bold; }
+body .container-fluid .columnista .column-img .column-p { font-family: "PT Sans", sans-serif; font-weight: bold; color: #6B7C89; padding-top: 2%; padding-bottom: 28px; }
+body .container-fluid .columnista .column-img img { background: white; padding: 2px; margin-right: 5px; }
+body .container-fluid .columnista .column-imga { background-color: #E2E6E9; padding: 12px; padding-bottom: 10px; margin-bottom: 5%; }
+body .container-fluid .columnista .column-imga h4 { font-family: "Oswald"; font-size: 13px; font-weight: bold; }
+body .container-fluid .columnista .column-imga img { padding-top: 3%; padding-right: 6px; }
+body .container-fluid .columnista .column-imga .actualidad { font-size: 15px; font-family: "PT Sans", sans-serif; font-weight: bold; color: #6B7C89; padding-top: 2%; }
+body .container-fluid .columnista .column-imgb { background-color: #E2E6E9; padding: 8px; margin-bottom: 14px; }
+body .container-fluid .columnista .column-imgb h4 { font-family: "Oswald"; font-size: 14px; font-weight: bold; }
+body .container-fluid .columnista .column-imgb .column-p { font-family: "PT Sans", sans-serif; font-weight: bold; color: #6B7C89; padding-top: 2%; padding-bottom: 33px; }
+body .container-fluid .columnista .column-imgb img { background: white; padding: 2px; margin-right: 5px; }
+
+/*# sourceMappingURL=columnista.css.map */

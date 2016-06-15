@@ -1,0 +1,119 @@
+mixin news1(href,name)
+    li: a(href='#')=name
+    
+mixin icon(call)
+    case call
+        when 'first'
+            i.fa.fa-shopping-cart.fa-stack
+        when 'second'
+            i.fa.fa-laptop.fa-stack
+        when 'third'
+            i.fa.fa-lock.fa-stack
+              
+mixin list-service(call, servicetittle)
+    .col-md-4
+        +icon(call)
+        h3= servicetittle
+        p= parrafo
+
+mixin img-member(imgmember)
+    case imgmember //-caso de imagenes en este caso
+        when 'member1' //-cuando llamen member1 te botara la imagen
+            img(src="img/team/1.jpg")
+        when 'member2'
+            img(src="img/team/2.jpg")
+        when 'member3'
+            img(src="img/team/3.jpg")
+mixin teammember(imgmember, membertittle)
+    .col-md-4
+        .img-moment
+            +img-member(imgmember)
+        h3= membertittle
+        
+        .social
+            a
+                i.fa.fa-twitter
+            a
+                i.fa.fa-facebook
+            a
+                i.fa.fa-linkedin
+section.team.text-center
+            h2 OUR AMAZING TEAM
+            p Lorem ipsum dolor sit amet.
+            .container
+                .row
+                    +teammember("member1", "Kay Garland")
+                    +teammember("member2", "Kay Garland")
+                    +teammember("member3", "Kay Garland")
+                .description-team.text-center
+                    p  Ab esse, dolorem laborum error facilis provident unde impedit quia magnam, maxime molestias quod, alias natus.
+
+        section.clients.text-center
+            +client("client1")
+            +client("client2")
+            +client("client3")
+            +client("client4")
+        section.form.text-center
+            h2 CONTACT US
+            p Lorem ipsum dolor sit amet.
+            .container
+                .row
+                    .col-md-6
+                        form
+                            +input("Your name*")
+                            +input("Your mail*")
+                            +input("Your phone*")
+                    .col-md-6
+                        form
+                            +textarea("Your message*")
+                button.btn.text-center Send Message 
+        footer.text-center.margin-t-b
+            .container
+                .row
+                    .col-md-4.margin-t-b
+                        p Copyright Your Website 2014
+                    .col-md-4
+                        .social
+                            a.redes-circle.fa.fa-twitter
+                            a.redes-circle.fa.fa-facebook
+                            a.redes-circle.fa.fa-linkedin
+                    .col-md-4.margin-t-b
+                        a Privacy Policy
+                        a Terms of Use
+
+   
+    include views/mixins
+    include views/variable
+   
+    div.container-fluid
+        .col-md-2
+            img.img-responsive.publicidad(src='assets/image/publicidad1.png')
+        .col-md-12
+            section.sub-header1
+                row
+                    .col-md-6
+                        img(src='assets/image/logo-la-republica.jpg')
+                    .col-md-5
+                        .nacionalismo
+                            p.lider HABLA LA LIDERESA DEL NACIONALISMO
+                            div.domingo
+                                p DOMINGO
+                    .col-md-5
+                        .gustavo
+                            p.editorial editorial
+                            div.corrupcion
+                                h6 La corrupción, los orígenes
+                                p por:Gustavo Mohne Llona
+                            img.pull-right(src='assets/image/img_author.png')
+            include views/menu
+            img.banner(src='assets/image/banner-header.jpg')
+            section.columnista
+                h1 Columnistas
+                p LO ÚLTIMO EN COMLUMNISTAS 
+                 img(src='assets/image/double-arrow-bottom.png')
+        .col-md-2
+            img.img-responsive.publicidad(src='assets/image/publicidad2.png')
+
+    h1 ola
+    p ola
+    include views/footer

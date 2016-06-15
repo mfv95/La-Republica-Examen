@@ -1,0 +1,127 @@
+mixin iconsocial(iconsocial)
+	case iconsocial
+		when "facebook"
+			a.text-center.fa.fa-facebook.fa-stack(href='https://www.facebook.com/larepublicape/')
+		when "twitter"
+			a.text-center.fa.fa-twitter.fa-stack(href='https://twitter.com/larepublica_pe?lang=es')
+		when "google_plus"
+			a.text-center.fa.fa-google-plus.fa-stack(href='https://plus.google.com/+larepublica')
+
+mixin fontawesome(fontawesome)
+	case fontawesome
+		when "youtube"
+			i.fa.fa-youtube-play
+		when "camera"
+			i.fa.fa-camera
+
+mixin imagjpg(url)
+	img.img-thumbnail(src='assets/image/'+ url + '.jpg')
+
+mixin mediajpg(url)
+	img.media-object(src='assets/image/'+ url + '.jpg')
+
+mixin imagif(url)
+	img.bullet(src='assets/image/'+ url + '.gif')
+
+mixin imagpng(url)
+	img.comment(src='assets/image/'+ url + '.png')
+
+mixin box_columnistas(url,text1,text2)
+	a(href='#'): +imagjpg(url)
+	h6= text1
+	h5= text2
+
+mixin specialnew(text1,text2,text3)
+	h5= text1
+	.photo-special-news
+		h4= text2
+	p= text3
+		| &nbsp;
+		strong= text1
+
+mixin media(text1,url,parrafo,text2,text3,text4)
+	h6 Hace 1 hora 12 mins
+	h4= text1
+	.media
+		a.media-left(href="#")
+			+mediajpg(url)
+		.media-body
+			p= parrafo
+			.iconos-redes
+				+iconsocial('facebook')
+				+iconsocial('twitter')
+				+iconsocial('google_plus')
+				+imagif('bullet')
+				+imagpng('ico_comment')
+				span= text2
+				+imagif('bullet')
+				span= text3
+				+imagif('bullet')
+				+fontawesome(text4)
+
+mixin media1(text1,url,parrafo,text2,text3)
+	h6 Hace 1 hora 12 mins
+	h4= text1
+	.media
+		a.media-left(href="#")
+			+mediajpg(url)
+		.media-body
+			p= parrafo
+			.iconos-redes
+				+iconsocial('facebook')
+				+iconsocial('twitter')
+				+iconsocial('google_plus')
+				+imagif('bullet')
+				+imagpng('ico_comment')
+				span= text2
+				+imagif('bullet')
+				span= text3
+
+mixin news_short(url,text1)
+	img(src='assets/image/' + url + '.jpg')
+	h5= text1
+
+mixin blog_short(url,text1,text2)
+	img.img-responsive(src="assets/image/"+ url + ".jpg")
+	p.text= text1
+	p=text2
+
+mixin newpaper_short(url,text1,text2)
+	.newpaper-short
+		img.img-responsive(src="assets/image/"+ url + ".jpg")
+		h5= text1
+		a= text2
+//- PIERA
+mixin input(place)
+	.form-group
+		input.form-control(placeholder= place)
+
+mixin textarea(message)
+	.form-group
+		textarea.form-control(placeholder= message)
+mixin blog(fecha, headline, call, tittlegrey, comentario)
+	.col-md-5
+		.blog-single
+			p= fecha
+			h3= headline 
+			
+mixin news1(href,name)
+	li: a(href='#')=name
+mixin news2(href,name)
+	li: a(href='#')=name
+mixin news3(href,name)
+	li: a(href='#')=name
+mixin news4(href,name)
+	li: a(href='#')=name
+mixin newspaper(href,name)
+	li: a(href='#')=name
+mixin input(place)
+	.form-group
+		input.form-control(
+		placeholder= place
+        )
+mixin textarea(message)
+	.form-group
+		textarea.form-control(
+			placeholder= message
+        )

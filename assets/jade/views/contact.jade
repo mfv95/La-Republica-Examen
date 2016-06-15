@@ -1,0 +1,66 @@
+include ../helpers/mixin
+doctype html
+html(lang='es-PE')
+    head
+        meta(charset='UTF-8')
+        title Contact
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(type='text/javascript', src='js/bootstrap.min.js')
+        script(type='text/javascript', src='js/slick.min.js')
+        script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='js/modernizr.custom.68172.js')
+        script(type='text/javascript', src='js/respond.js')
+
+include header
+.contact
+    .col-md-2
+    .col-md-12
+        h1.text-center Contactese con Nosotros
+        p.text-justify Llena este formulario si necesita enviarnos alguna informacion acerca del contenido del sitio web, su funcionabilidad, o si tiene alguna propuesta de informacion o mejora para el sitio. Asi mismo, puede hacer llegar a los redactores su opinion acerca de los contenidos de una determinada seccion el cual podra elegir como destinatario.
+        .col-md-2
+        .col-md-12
+            form
+                +input("Nombres Completos")
+                +input("Correo electronico")
+                +input("Telefonos")
+                p.opcional (Opcional)
+                h3 Elija un destinatario
+                .col-md-8.col-xs-8
+                    input.destinity(type='radio', name='destinatario', value='destino')
+                    label Sugerencia para el sitio web
+                    br
+                    input.destinity(type='radio', name='destinatario', value='destino')
+                    label Dirección periodística
+                    br
+                    input.destinity(type='radio', name='destinatario', value='destino')
+                    label Dirección comercial
+                    br
+                    input.destinity(type='radio', name='destinatario', value='destino')
+                    label Cartas al irector
+                    br
+                    input.destinity(type='radio', name='destinatario', value='destino')
+                    label Promociones y productos del diario
+                    br
+                    input#destinity(type='radio', name='destinatario', value='destino')
+                    label Archivo periodídtico
+                .col-md-8.col-xs-8.text-right
+                    p.text-right.little (Ej: funcionamiento y mejoras para el sitio)
+                    p.text-right.little (Ej: Sugerencia para la nota de prensa) 
+                    p.text-right.little (Ej: Publicidad en diarios o sitios web)
+                    p.text-right.little (Ej: denuncias, comentarios e impresiones)
+                    p.text-right.little (Ej: Promociones, tablet, etc.)
+                    p.text-right.little (Ej: Ediciones impresas/fotos)      
+                +textarea("Mensaje")
+                .cuadro-btn.text-center
+                    button ENVIAR
+    
+include footer
